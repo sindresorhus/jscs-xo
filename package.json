@@ -1,0 +1,64 @@
+{
+  "name": "jscs-xo",
+  "version": "0.0.0",
+  "description": "JSCS shareable preset for XO",
+  "license": "MIT",
+  "repository": "sindresorhus/jscs-xo",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && node test.js"
+  },
+  "files": [
+    "jscsrc",
+    "jscsrc-esnext"
+  ],
+  "keywords": [
+    "jscs-config",
+    "jscs-preset",
+    "xo",
+    "xoxo",
+    "hugs",
+    "kisses",
+    "happy",
+    "happiness",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "standard",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint",
+    "simple"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4",
+    "jscs": "^2.1.0",
+    "xo": "*"
+  },
+  "peerDependencies": {
+    "jscs": "^2.1.0"
+  },
+  "xo": {
+    "ignores": [
+      "fixture.js"
+    ]
+  }
+}

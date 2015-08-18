@@ -1,0 +1,6 @@
+{
+	"requireArrowFunctions": true,
+	"requireNumericLiterals": true,
+	"requireSpread": true,
+	"requireTemplateStrings": true
+}
