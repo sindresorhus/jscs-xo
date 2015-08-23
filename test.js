@@ -8,7 +8,7 @@ test(function (t) {
 
 	childProcess.execFile('node', [
 		path.join(__dirname, 'node_modules', '.bin', 'jscs'),
-		'--config=jscsrc',
+		'--config=.jscs.json',
 		'--reporter=json',
 		'--verbose',
 		'fixture.js'

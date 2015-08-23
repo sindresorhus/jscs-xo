@@ -4,6 +4,7 @@
   "description": "JSCS shareable preset for XO",
   "license": "MIT",
   "repository": "sindresorhus/jscs-xo",
+  "main": ".jscs.json",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -13,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && jscs test.js"
   },
   "files": [
     "jscsrc",
@@ -50,11 +51,7 @@
   ],
   "devDependencies": {
     "ava": "0.0.4",
-    "jscs": "^2.1.0",
     "xo": "*"
-  },
-  "peerDependencies": {
-    "jscs": "^2.1.0"
   },
   "xo": {
     "ignores": [
