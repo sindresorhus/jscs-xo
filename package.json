@@ -13,13 +13,14 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "jscsrc",
     "jscsrc-esnext"
   ],
   "keywords": [
+    "❤️",
     "jscs-config",
     "jscs-preset",
     "xo",
@@ -49,16 +50,11 @@
     "simple"
   ],
   "devDependencies": {
-    "ava": "0.0.4",
+    "ava": "*",
     "jscs": "^2.1.0",
     "xo": "*"
   },
   "peerDependencies": {
     "jscs": "^2.1.0"
-  },
-  "xo": {
-    "ignores": [
-      "fixture.js"
-    ]
   }
 }

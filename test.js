@@ -1,9 +1,8 @@
-'use strict';
-var path = require('path');
-var childProcess = require('child_process');
-var test = require('ava');
+import path from 'path';
+import childProcess from 'child_process';
+import test from 'ava';
 
-test(function (t) {
+test(t => {
 	t.plan(3);
 
 	childProcess.execFile('node', [
@@ -16,8 +15,8 @@ test(function (t) {
 		cwd: __dirname
 	}, function (_, stdout) {
 		var errors = JSON.parse(stdout)['fixture.js'];
-		t.assert(errors.length === 2);
-		t.assert(/^validateQuoteMarks/.test(errors[0].message));
-		t.assert(/^requireSemicolons/.test(errors[1].message));
+		t.is(errors.length, 2);
+		t.regexTest(/^validateQuoteMarks/, errors[0].message);
+		t.regexTest(/^requireSemicolons/, errors[1].message);
 	});
 });
