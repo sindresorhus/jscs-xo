@@ -1,4 +1,8 @@
-# jscs-xo [![Build Status](https://travis-ci.org/sindresorhus/jscs-xo.svg?branch=master)](https://travis-ci.org/sindresorhus/jscs-xo)
+# Deprecated. [JSCS is moving to the ESLint team](http://eslint.org/blog/2016/04/welcoming-jscs-to-eslint). Use [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo) with ESLint or [XO](https://github.com/sindresorhus/xo) instead.
+
+---
+
+# jscs-xo
 
 > [JSCS](http://jscs.info) shareable preset for [XO](https://github.com/sindresorhus/xo)
 
